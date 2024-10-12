@@ -19,6 +19,7 @@ See the Mulan PSL v2 for more details. */
 #include "common/rc.h"
 #include "storage/clog/log_replayer.h"
 
+
 class DiskBufferPool;
 class BufferPoolManager;
 class LogHandler;

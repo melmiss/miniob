@@ -19,6 +19,7 @@ See the Mulan PSL v2 for more details. */
 #include "common/lang/span.h"
 #include "common/lang/functional.h"
 
+
 struct RID;
 class Record;
 class DiskBufferPool;
@@ -79,6 +80,8 @@ public:
   RC delete_record(const Record &record);
   RC delete_record(const RID &rid);
   RC get_record(const RID &rid, Record &record);
+ // 删除表格函数
+  RC drop();
 
   RC recover_insert_record(Record &record);
 
